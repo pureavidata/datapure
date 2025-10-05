@@ -3,20 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home | DataPure</title>
+    <title>DataPure | Data Science for Construction & Industry</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html">About Us</a>
-            <a href="contact.html">Contact</a>
-        </nav>
+
+    <header class="header">
+        <div class="container navbar">
+            <a href="index.html" class="logo">DataPure</a>
+            <nav class="nav-links">
+                <a href="index.html" class="active">Home</a>
+                <a href="services.html">Services</a>
+                <a href="about.html">About Us</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
     </header>
+
     <main>
-        <h1>Welcome to DataPure!</h1>
-        <p>This site is built with TypeScript and hosted on GitHub Pages.</p>
+        <section class="hero">
+            <div class="container hero-content">
+                <h1>Build Smarter, Faster, and Safer</h1>
+                <p>We unlock the power of your project data to reduce delays, enhance safety, and optimize budgets for construction and industrial companies.</p>
+                <a href="services.html" class="btn btn-primary">Discover Our Solutions</a>
+            </div>
+        </section>
+
+        <section class="services fade-in-section">
+            <div class="container">
+                <h2 class="section-title">Our Core Services</h2>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <h3>Predictive Project Scheduling</h3>
+                        <p>Leverage AI to forecast project timelines, identify potential bottlenecks, and prevent costly delays before they happen.</p>
+                    </div>
+                    <div class="service-card">
+                        <h3>Automated Safety Monitoring</h3>
+                        <p>Analyze site data and imagery to proactively identify safety risks, ensuring compliance and protecting your workforce.</p>
+                    </div>
+                    <div class="service-card">
+                        <h3>Cost Overrun Analysis</h3>
+                        <p>Use machine learning to analyze expenditures and resource allocation, providing insights to keep your project on budget.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta fade-in-section">
+            <div class="container">
+                <h2>Ready to Transform Your Next Project?</h2>
+                <p>Let's discuss how data can give you a competitive edge.</p>
+                <a href="contact.html" class="btn btn-primary">Get a Free Consultation</a>
+            </div>
+        </section>
     </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 DataPure. All Rights Reserved. Building the Future with Data.</p>
+        </div>
+    </footer>
+
     <script src="js/main.js"></script>
 </body>
 </html>
