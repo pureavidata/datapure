@@ -222,8 +222,6 @@ section {
     transform: translateY(0);
 }
 
-/* ADD THESE STYLES TO THE BOTTOM OF YOUR CSS FILE */
-
 /* 8. Smooth Scrolling & Page-Specific Styles */
 html {
     scroll-behavior: smooth;
@@ -272,11 +270,15 @@ html {
 }
 
 /* 10. Contact Page & Form Styles */
+.contact-section {
+    padding-bottom: 80px;
+}
 .contact-grid {
     display: grid;
     grid-template-columns: 2fr 1fr;
     gap: 3rem;
     margin-top: 4rem;
+    align-items: start;
 }
 .contact-form form {
     display: flex;
@@ -291,16 +293,27 @@ html {
     border: 1px solid #ddd;
     font-family: var(--font-family);
     font-size: 1rem;
+    box-sizing: border-box;
 }
 .contact-info h3 {
     font-family: var(--heading-font);
     color: var(--primary-color);
     margin-bottom: 0.5rem;
+    margin-top: 0;
+}
+.contact-info p {
+    margin-top: 0;
 }
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
     .contact-grid {
         grid-template-columns: 1fr;
+    }
+    .nav-links {
+        display: none; /* Simple responsive fix: hide nav links on small screens */
+    }
+    .hero-content h1 {
+        font-size: 2.5rem;
     }
 }
