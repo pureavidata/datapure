@@ -84,10 +84,12 @@ section {
 }
 
 /* UPDATED HEADER STYLES */
+/* Container to hold both logo links together - NOW STACKS VERTICALLY */
 .logo-container {
   display: flex;
-  align-items: baseline; /* Aligns the text nicely */
-  gap: 8px; /* Adds space between the two links */
+  flex-direction: column; /* This is the key change */
+  align-items: flex-start; /* Aligns items to the left */
+  gap: 0px; /* Remove gap between stacked items */
 }
 
 .logo {
