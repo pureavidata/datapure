@@ -3,13 +3,20 @@ name: Compile TypeScript
 on:
   push:
     branches:
-      - main # Or master, depending on your branch name
+      - main
     paths:
       - 'docs/ts/**'
 
 jobs:
   build:
     runs-on: ubuntu-latest
+
+    # --- ADD THIS SECTION ---
+    # This gives the action permission to write to your repository
+    permissions:
+      contents: write
+    # --------------------------
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
