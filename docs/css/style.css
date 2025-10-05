@@ -29,15 +29,6 @@ body {
     line-height: 1.7;
 }
 
-/* Style for the logo tagline */
-.logo .tagline {
-  font-size: 0.5em;        /* Makes the text smaller */
-  font-weight: 400;        /* Makes the font normal weight (not bold) */
-  color: #777;            /* Sets a lighter grey color */
-  margin-left: 8px;        /* Adds a little space next to the logo */
-  vertical-align: middle;  /* Aligns it nicely */
-  font-family: var(--font-family); /* Uses the body font instead of the heading font */
-}
 /* 2. Reusable Components */
 .container {
     max-width: 1200px;
@@ -92,6 +83,13 @@ section {
     align-items: center;
 }
 
+/* UPDATED HEADER STYLES */
+.logo-container {
+  display: flex;
+  align-items: baseline; /* Aligns the text nicely */
+  gap: 8px; /* Adds space between the two links */
+}
+
 .logo {
     font-family: var(--heading-font);
     font-size: 1.8rem;
@@ -99,6 +97,20 @@ section {
     color: var(--primary-color);
     text-decoration: none;
 }
+
+.tagline {
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: #777;
+  text-decoration: none; /* Removes the underline */
+  font-family: var(--font-family);
+  transition: color 0.2s ease;
+}
+
+.tagline:hover {
+  color: var(--primary-color); /* Changes color on hover */
+}
+/* END UPDATED HEADER STYLES */
 
 .nav-links a {
     margin-left: 2rem;
@@ -218,6 +230,23 @@ section {
     padding-top: 2rem;
     padding-bottom: 2rem;
 }
+
+/* NEW FOOTER STYLES */
+.footer-attribution {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: #ccc;
+}
+
+.footer-attribution a {
+  color: var(--white-color); /* Makes the link white */
+  text-decoration: underline;
+}
+
+.footer-attribution a:hover {
+  text-decoration: none;
+}
+/* END NEW FOOTER STYLES */
 
 /* Fade-in animation for sections */
 .fade-in-section {
