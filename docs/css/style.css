@@ -29,6 +29,15 @@ body {
     line-height: 1.7;
 }
 
+/* Style for the logo tagline */
+.logo .tagline {
+  font-size: 0.5em;        /* Makes the text smaller */
+  font-weight: 400;        /* Makes the font normal weight (not bold) */
+  color: #777;            /* Sets a lighter grey color */
+  margin-left: 8px;        /* Adds a little space next to the logo */
+  vertical-align: middle;  /* Aligns it nicely */
+  font-family: var(--font-family); /* Uses the body font instead of the heading font */
+}
 /* 2. Reusable Components */
 .container {
     max-width: 1200px;
