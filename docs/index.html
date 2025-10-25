@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PureData | Data Science for Industries</title>
+    <title>PureData | Data Science for Construction & Industry</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -11,9 +12,12 @@
     <header class="header">
         <div class="container navbar">
             <div class="logo-container">
-                <a href="index.html" class="logo">PureData</a>
+                <a href="index.html" class="logo">
+                    <img src="assets/images/logos/logo.png" alt="PureData Logo" class="logo-image">
+                    <span class="logo-text">PureData</span>
+                </a>
                 <a href="https://clexenrentals.com/" class="tagline" target="_blank" rel="noopener noreferrer">
-                    Owned and operated by Clexen Rentals
+                    owned & operated by Clexen Rentals
                 </a>
             </div>
             <nav class="nav-links">
@@ -26,33 +30,34 @@
     </header>
 
     <main>
-        <section id="home" class="hero">
-            <div class="container hero-content">
+        <section id="home" class="hero" style="background-image: url('assets/images/general/background.jpg');">
+            <div class="hero-content">
                 <h1>Build Smarter, Faster, and Safer</h1>
                 <p>We unlock the power of your project data to reduce delays, enhance safety, and optimize budgets for construction and industrial companies.</p>
-                <a href="#services" class="btn btn-primary">Discover Our Solutions</a>
+                <a href="#contact" class="btn btn-primary">Get a Consultation</a>
             </div>
         </section>
 
-        <section id="services" class="services fade-in-section">
+        <section id="services" class="fade-in-section">
             <div class="container">
                 <h2 class="section-title">Our Core Services</h2>
+                <p class="subtitle">Data-driven solutions to optimize every phase of your project.</p>
                 <div class="services-grid">
                     <div class="service-card">
+                        <div class="icon"><i class="fa-solid fa-chart-line"></i></div>
                         <h3>Predictive Project Scheduling</h3>
                         <p>Leverage AI to forecast project timelines, identify potential bottlenecks, and prevent costly delays before they happen.</p>
                     </div>
                     <div class="service-card">
+                        <div class="icon"><i class="fa-solid fa-shield-halved"></i></div>
                         <h3>Automated Safety Monitoring</h3>
                         <p>Analyze site data and imagery to proactively identify safety risks, ensuring compliance and protecting your workforce.</p>
                     </div>
                     <div class="service-card">
+                        <div class="icon"><i class="fa-solid fa-coins"></i></div>
                         <h3>Cost Overrun Analysis</h3>
                         <p>Use machine learning to analyze expenditures and resource allocation, providing insights to keep your project on budget.</p>
                     </div>
-                </div>
-                 <div style="text-align: center; margin-top: 3rem;">
-                    <a href="services.html" class="btn btn-secondary">View All Services</a>
                 </div>
             </div>
         </section>
@@ -60,21 +65,7 @@
         <section id="about" class="about-section fade-in-section">
              <div class="container">
                 <h2 class="section-title">Why PureData?</h2>
-                <p class="subtitle">We are a team of data scientists, engineers, and industry experts passionate about bringing digital transformation to the physical world. Our mission is to make construction projects more efficient, predictable, and safe through the power of data.</p>
-                <div class="team-grid">
-                    <div class="team-member">
-                        <h4>Rohit Chauhan</h4>
-                        <p>CEO & Founder</p>
-                    </div>
-                    <div class="team-member">
-                        <h4>Chandra Bhushan</h4>
-                        <p>Senior Consultant</p>
-                    </div>
-                    <div class="team-member">
-                        <h4>Roushan Mohite</h4>
-                        <p>Team Lead</p>
-                    </div>
-                </div>
+                <p class="subtitle">We blend deep industry knowledge with cutting-edge data science to deliver results, not just reports. Our mission is to make construction projects more efficient, predictable, and safe.</p>
             </div>
         </section>
 
@@ -87,7 +78,7 @@
                         <form action="#">
                             <input type="text" name="name" placeholder="Your Name" required>
                             <input type="email" name="email" placeholder="Your Email" required>
-                            <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+                            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
                             <button type="submit" class="btn btn-primary">Send Message</button>
                         </form>
                     </div>
@@ -104,12 +95,11 @@
 
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2020 PureData. All Rights Reserved. Building the Future with Data.</p>
-
+            <p>&copy; 2025 PureData. All Rights Reserved.</p>
             <div class="footer-attribution">
-                PureData is a owned by <a href="https://clexenrentals.com/" target="_blank" rel="noopener noreferrer">Clexen Rentals</a> .
+                PureData is owned & operated by <a href="https://clexenrentals.com/" target="_blank" rel="noopener noreferrer">Clexen Rentals</a>.
             </div>
-            </div>
+        </div>
     </footer>
 
     <script src="js/main.js"></script>
